@@ -193,7 +193,7 @@ section {
     margin-bottom: 24px;
 }
 
-.radio_text {
+.radio_question {
     color: #FFF;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -203,16 +203,36 @@ section {
     /* 162.5% */
 }
 
-.radio_frame_1 {
+.radio_frame {
     margin-top: 17px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    
 }
 
 .radio {
     appearance: none;
     width: 24px;
     height: 24px;
-    stroke-width: 2px;
-    stroke: rgba(243, 10, 234, 0.71);
+    /* stroke-width: 2px;
+    stroke: rgba(243, 10, 234, 0.71); */
+    border: 2px solid #F30AEAB5;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+}
+
+.radio_text {
+    color: #B052B5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
 }
 
 .message_box {
@@ -244,6 +264,22 @@ textarea {
 
 .news_box {
     margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    /* stroke-width: 2px;
+    stroke: rgba(243, 10, 234, 0.71); */
+    border: 2px solid #F30AEAB5;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
 }
 
 .checkbox_text {
