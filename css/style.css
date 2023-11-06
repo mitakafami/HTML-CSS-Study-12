@@ -51,6 +51,10 @@
     column-gap: 8px;
 }
 
+button {
+    cursor: pointer;
+}
+
 .header_log_in {
     color: #FFF;
     font-family: 'Poppins', sans-serif;
@@ -78,3 +82,34 @@
     border-radius: 8px;
     background: #F30AEA;
 }
+
+.bottom_header {
+    height: 64px;
+    background-color: #01ACA9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_nav {}
+
+.header_ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 96px;
+
+}
+
+.header_list {}
+
+.header_text {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 130% */
+}
+
