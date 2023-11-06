@@ -208,7 +208,7 @@ section {
     display: flex;
     align-items: center;
     column-gap: 8px;
-    
+
 }
 
 .radio {
@@ -308,4 +308,22 @@ textarea {
     font-weight: 400;
     line-height: 26px;
     /* 162.5% */
+}
+
+#send {
+    display: flex;
+    width: 464px;
+    padding: 19px 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #F30AEA;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    /* 162.5% */
+    border: none;
 }
