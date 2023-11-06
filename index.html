@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="images/header-logo.svg" type="image/x-icon" />
-        <link rel="stylesheet" href="css/reset.css" />
-        <script src="https://kit.fontawesome.com/1ba9506b3c.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/laptop.css" />
-        <link rel="stylesheet" href="css/tablet.css" />
-        <link rel="stylesheet" href="css/phone.css" />
-        <title>HOME</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/header-logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <script src="https://kit.fontawesome.com/1ba9506b3c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/laptop.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/phone.css" />
+    <title>HOME</title>
+</head>
 <body>
+
+<!-- CONTAINER  -->
+
     <div class="container">
+
+<!-- HEADER FRAME  -->
+
         <header class="header_frame"></header>
+
+<!-- HEADER TOPSIDE -->
+
         <header class="top_header">
+
+<!-- HEADER LOGO  -->
+
             <img class="logo" src="images/logo plant.svg" alt="">
+
+<!-- SEARCH BAR -->
+
             <form class="search_bar" action="">
                 <input type="search" id="search" placeholder="What are you looking for?">
                 <input type="image" src="images/search.svg" width="48" height="48" class="search_icon">
-
             </form>
+
+            <!-- RIGHT SIDE  -->
 
             <div class="right_side">
                 <button class="header_log_in">LOG IN</button>
                 <input type="image" src="images/cart.svg" class="header_cart" width="42" height="42">
             </div>
         </header>
+
+<!-- HEADER DOWNSIDE  -->
+
         <header class="bottom_header">
+
+<!-- HEADER NAVIGATION  -->
+
             <nav class="header_nav">
                 <ul class="header_ul">
                     <li class="header_list"><a class="header_text" href="">HOME</a></li>
@@ -39,81 +62,117 @@
                 </ul>
             </nav>
         </header>
-    </header>
-    <section>
-        <form action="" class="main_form">
-            <h1 class="main_form_title">CONTACT US</h1>
-            <div class="input_box">
-                <div class="name_email_box">
-                    <input type="text" placeholder="Name" class="input_one">
-                    <input type="email" placeholder="Email"  class="input_one">
-                </div>
-                <div class="answer_box">
-                    <label for="question" class="answer_text">Is your question about an existing order?</label>
-                    <select name="question" id="question">
-                        <option value=""></option>
-                        <option value="YES">YES</option>
-                        <option value="NO">NO</option>
-                    </select>
-                </div>
-                <div class="radio_box">
-                    <label for="" class="radio_question">I have a delivery question about my order</label>
-                    <div class="radio_frame">
-                        <input type="radio" class="radio"><label for="" class="radio_text">I did not receive my order</label>
+        </header>
+
+<!-- FORM SECTION  -->
+
+        <section>
+
+<!-- MAIN FORM  -->
+
+            <form action="" class="main_form">
+                <h1 class="main_form_title">CONTACT US</h1>
+
+<!-- INPUT BOX -->
+
+                <div class="input_box">
+
+<!-- NAME AND EMAIL INPUT  -->
+
+                    <div class="name_email_box">
+                        <input type="text" placeholder="Name" name="name" id="name">
+                        <input type="email" placeholder="Email" name="email" id="email">
                     </div>
-                    <div class="radio_frame">
-                        <input type="radio" class="radio"><label for="" class="radio_text">My order is incorrect or arrived damaged</label>
+
+<!-- QUESTION AND ANSWER OPTIONS  -->
+
+                    <div class="answer_box">
+                        <label for="question" class="answer_text">Is your question about an existing order?</label>
+                        <select name="question" id="question">
+                            <option value=""></option>
+                            <option value="YES" id="yes">YES</option>
+                            <option value="NO" id="no">NO</option>
+                        </select>
                     </div>
-                    <div class="radio_frame">
-                        <input type="radio" class="radio"><label for="" class="radio_text">Cancel my order</label>
+
+<!-- RADIO  -->
+
+                    <div class="radio_box">
+                        <label for="" class="radio_question">I have a delivery question about my order</label>
+                        <div class="radio_frame">
+                            <input type="radio" id="radio_one" name="radio"><label for="radio" class="radio_text">I did
+                                not receive my order</label>
+                        </div>
+                        <div class="radio_frame">
+                            <input type="radio" id="radio_two" name="radio"><label for="radio" class="radio_text">My
+                                order is incorrect or arrived damaged</label>
+                        </div>
+                        <div class="radio_frame">
+                            <input type="radio" id="radio_three" name="radio"><label for="radio"
+                                class="radio_text">Cancel my order</label>
+                        </div>
+                        <div class="radio_frame">
+                            <input type="radio" id="radio_four" name="radio"><label for="radio"
+                                class="radio_text">Change my shipping address</label>
+                        </div>
                     </div>
-                    <div class="radio_frame">
-                        <input type="radio" class="radio"><label for="" class="radio_text">Change my shipping address</label>
+
+<!-- MESSAGE TEXT BOX -->
+
+                    <div class="message_box">
+                        <label for="area" class="message_text">Please provide more details below.</label>
+                        <textarea name="area" id="area" cols="30" rows="10" placeholder="Message"></textarea>
                     </div>
+
+<!-- NEWS CHECKBOX  -->
+
+                    <div class="news_box">
+                        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox"><label for="checkbox"
+                            class="checkbox_text">I want to receive the newsletter </label>
+                    </div>
+
+<!-- SUBMIT BUTTON  -->
+
+                    <input type="submit" name="send" id="send" value="SEND">
                 </div>
-                <div class="message_box">
-                    <label for="" class="message_text">Please provide more details below.</label>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            </form>
+        </section>
+
+<!-- FOOTER  -->
+
+        <footer>
+
+<!-- SOCIAL MEDIA  -->
+
+            <div class="social_media_box">
+                <h2 class="footer_follow">Follow us</h2>
+                <div class="social_media_icons">
+                    <a href=""><img class="media_icon" src="images/facebook.svg" alt=""></a>
+                    <a href=""><img class="media_icon" src="images/instagram.svg" alt=""></a>
+                    <a href=""><img class="media_icon" src="images/twitter.svg" alt=""></a>
+                    <a href=""><img class="media_icon" src="images/pinterest.svg" alt=""></a>
                 </div>
-                <div class="news_box">
-                <input type="checkbox" name="" id="" class="checkbox"><label for="" class="checkbox_text">I want to receive the newsletter </label>
-                </div>
-                <input type="submit" name="send" id="send" value="SEND">
             </div>
 
+<!-- CONTACT  -->
 
-
-
-
-        </form>
-    </section>
-    <footer>
-        <div class="social_media_box">
-            <h2 class="footer_follow">Follow us</h2>
-            <div class="social_media_icons">
-                <a href=""><img class="media_icon" src="images/facebook.svg" alt=""></a>
-                <a href=""><img class="media_icon" src="images/instagram.svg" alt=""></a>
-                <a href=""><img class="media_icon" src="images/twitter.svg" alt=""></a>
-                <a href=""><img class="media_icon" src="images/pinterest.svg" alt=""></a>
+            <div class="contact_box">
+                <h2 class="footer_contact_text">Contact us</h2>
+                <nav class="footer_nav">
+                    <ul class="footer_ul">
+                        <li class="footer_li"><a class="footer_nav_text one" href="">New York, 94 Brodway</a></li>
+                        <li class="footer_li"><a class="footer_nav_text two" href="">+555 67 88 00</a></li>
+                        <li class="footer_li"><a class="footer_nav_text three" href="">plant@gmail.com</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-        <div class="contact_box">
-            <h2 class="footer_contact_text">Contact us</h2>
-            <nav class="footer_nav">
-                <ul class="footer_ul">
-                    <li class="footer_li"><a class="footer_nav_text one" href="">New York, 94 Brodway</a></li>
-                    <li class="footer_li"><a class="footer_nav_text two" href="">+555 67 88 00</a></li>
-                    <li class="footer_li"><a class="footer_nav_text three" href="">plant@gmail.com</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="copyright">
-            <p class="copyright_text">Copyright © 2023 House Plant Shop.</p>
+
+<!-- COPYRIGHT  -->
+
+            <div class="copyright">
+                <p class="copyright_text">Copyright © 2023 House Plant Shop.</p>
             </div>
-    </footer>
-
-
+        </footer>
     </div>
-    
 </body>
 </html>
