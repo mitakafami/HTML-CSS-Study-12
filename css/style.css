@@ -225,6 +225,15 @@ section {
     margin-left: 0;
 }
 
+.radio:checked::before {
+    content: "\f192";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: rgb(197, 19, 210);
+    font-size: 20px;
+}
+
+
 .radio_text {
     color: #B052B5;
     font-family: 'Poppins', sans-serif;
@@ -280,6 +289,14 @@ textarea {
     justify-content: center;
     align-items: center;
     margin-left: 0;
+}
+
+.checkbox:checked::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: rgb(197, 19, 210);
+    font-size: 20px;
 }
 
 .checkbox_text {
